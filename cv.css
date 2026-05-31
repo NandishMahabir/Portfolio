@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+nav{
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    z-index: 2;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-right: 25rem;
+    list-style: none;
+}
+nav ul a{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color:orangered;
+}
+
+body {
+    background-color: #292e36;
+}
+
+
+header {
+    padding-right: 25rem;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    padding: 11rem 0 0 0;
+    color: white;
+}
+
+header p {
+    padding: 0 0 5rem 0;
+    color: orangered;
+}
+
+header img {
+    margin-left: 1rem;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+
+}
+
+header img:hover {
+    box-shadow: 10px 10px 5px grey, 10px 10px 10px orangered;
+}
+
+header img:active {
+    box-sizing: revert;
+    border: 5px solid grey;
+    box-shadow: none;
+}
+
+main {
+    padding-bottom: 5rem;
+}
+
+main h1 {
+    padding: 2rem 0 0 0;
+    color: orangered;
+}
+
+main h2 {
+    padding: 1rem 0 0 1rem;
+    font-size: 20px;
+}
+
+main hr {
+    border-color: #1b1b1b;
+    border-width: 1px;
+}
+
+main p {
+    padding: 1rem 0 0 1rem;
+    margin: 0 1rem 0 0;
+    color: black;
+}
+
+main a {
+    padding: 1rem 0 0 1rem;
+    margin: 0 1rem 0 0;
+    color: black;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: orangered;
+}
+
+.kolommen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20%;
+}
+
+.kolommen article {
+    position: relative;
+}
+
+.kolom1 {
+    width: auto;
+    background: white;
+    padding: 2rem;
+}
+
+.kolom2 {
+    width: auto;
+    background: lightgray;
+    padding: 2rem;
+}
+
+.h1-icoon {
+    width: 25px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.contac-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.contac-info img {
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+}
+
+.contac-info p {
+    padding: 1rem 0 0 3rem;
+}
+
+.contac-info a {
+    padding: 1rem 0 0 3rem;
+}
+
+#skills ul {
+    padding: 0 0 0 3rem;
+}
+
+.digitalevaardigheden {
+    display: flex;
+    justify-content: space-between;
+}
+
+.digitalevaardigheden p {
+    padding: 1rem 0 0 2rem;
+}
+
+.skill-level {
+    display: flex;
+}
+
+.cirkel {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 1rem 0.2rem 0 0;
+}
+
+.lege-cirkel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 1rem 0.2rem 0 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.items ul {
+    padding: 0 0 0 2rem;
+}
+
+.ervaringen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ervaringen ul {
+    padding: 1rem 0 0 3rem;
+}
+
+.functie {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 0;
+}
+
+.plaats {
+    padding-top: 0;
+}
+
+.datum {
+    position: relative;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+}
+#flexbox-footer {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    color: white;
+}
+
+#terug-naar-boven {
+    background-color: orangered;
+    padding: 1rem 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#terug-naar-boven:hover {
+    color: black;
+}
+
+
+
+@media screen and (max-width:480px) {
+    header{
+        flex-direction: column;
+        padding-bottom: 14rem;
+    }
+    header h1{
+        padding: 2rem 0 0 2rem;
+    }
+    header p{
+        padding: 0 0 0 2rem;
+    }
+    header img{
+        top: 6rem;
+        left: 1rem;
+    }
+
+
+    main{
+        padding-bottom: 6rem;
+    }
+    .kolommen{
+        flex-direction: column;
+        padding: 0;
+    }
+    .kolom1{
+        padding: 1rem;
+    }
+    .kolom2{
+        padding: 1rem;
+    }
+
+
+    footer p{
+        padding-right: 0.75rem;
+    }
+
+    #flexbox-footer{
+        height: 6rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

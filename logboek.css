@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+nav{
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    z-index: 2;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-right: 25rem;
+    list-style: none;
+}
+nav ul a{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color:orangered;
+}
+body{
+    background-color: #292e36;
+}
+main{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main h1{
+    padding: 3rem 0 0 20rem;
+    color: white;
+    font-size: 32px;
+}
+#logboekTabel{
+    padding-top: 1rem;
+    padding-left: 20rem;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: orangered;
+}
+th{
+    padding: 1rem;
+    font-size: 24px;
+}
+td{
+    padding: 1rem;
+    font-size: 24px;
+    color: lightgray;
+}
+main ul{
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+}
+.blueTextTable{
+    color: royalblue;
+}
+.redTextTable{
+    color: red;
+}
